@@ -1,0 +1,353 @@
+body{
+    background-color: #000;
+    color:#fff;
+    font-family: "Montserrat", sans-serif;
+    margin:0;
+}
+.main{
+    display:flex;
+    height:100vh;
+    width:100%;
+    background-color: #000;
+}
+.sidebar{
+    background-color:black ;
+    width:340px;
+    border-radius:1rem;    /*here 1rem=16px  */
+    margin-right:0.5rem;
+}
+.main-content{
+    overflow:auto;   /* scroll as well*/
+    background-color: #000;
+    flex:1;
+    border-radius:1rem; 
+    margin:1rem 0.5rem 1rem 0.5rem;
+    padding:0 1.5rem 0 1.5rem;
+}
+.music-player {
+    background-color: #000;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 25px;
+    height: 72px;
+    display:flex;
+    /* flex-direction:; */
+    justify-content:space-between;
+    align-items:center;
+}
+
+.nav{
+    background-color: #121212;
+    border-radius:1rem;
+    margin:0.3rem;
+    padding:0.5rem  0.75rem;
+    display:flex;
+    flex-direction:column;
+    height:5.25rem;
+    justify-content:center;
+    /* line-height:2.5rem; */
+}
+.Search{
+    opacity:0.6;
+    margin-left:1rem;
+    line-height:2.5rem;
+    /* padding:0.5rem 0.75rem;*/
+} 
+.Search:hover{
+    opacity:1;
+}
+a{
+    color:white;
+    text-decoration:none;
+    margin-left:0.5rem;
+    font-size:1rem;
+}
+.Home{
+    margin-left:1rem;
+    line-height:2.5rem;
+    /* padding:0.5rem 0.75rem; */
+}
+img{
+    height:1.3rem;
+    margin-left:2.05rem;
+    margin-right:0.65rem;
+    font-size:1.25rem;
+}
+.library{   
+    background-color:#121212;
+    border-radius:1rem;
+    height:100%;
+    /* margin-top:0.5rem; */
+    /* padding:0.5rem 0.75rem; */
+}
+.options{
+    /* justify-content: */
+    margin:0.3rem;
+    display:flex;
+    /* top:5rem; */
+    height:3.5rem;
+    line-height:50px;
+    justify-content:space-between;
+    align-items:center;
+    
+}
+.icons{
+    margin-left:2rem;
+    margin-right:1rem;
+    width:5rem;
+    font-size:1.25rem;
+    /* padding:1rem; */
+    justify-content:space-between;
+    opacity:0.5;
+    display:flex;
+    /* background-color: antiquewhite; */
+}
+.icons:hover{
+    opacity:1;
+}
+/* .option{
+    /* opacity:0.6; 
+} */
+.option:hover{
+    opacity:1;
+}
+.icons i{
+    /* margin-left:0.6rem; */
+    margin-right:1rem;
+    opacity:0.6;
+}
+.icons i:hover{
+    opacity:1;
+}
+.lia-box-1{
+    height:100px;
+    background-color: #1f1f1f;
+    border-radius:1rem;
+    margin:0.6rem;
+    padding:1rem;
+    /* justify-content:center;
+    align-items:center; */
+    line-height:2rem;
+    /* display:flex; */
+    /* flex-direction:column ; */
+}
+.lia-box-2{
+    background-color: #1f1f1f;
+    height:140px;
+    border-radius:0.75rem;
+    margin:0.6rem;
+    padding:1rem;
+    line-height:2rem;
+}
+/* .badge{
+    border-radius:1rem;
+} */
+.box-p1{
+    font-size:1rem;
+    font-weight:500;
+}
+.box-p2{
+    font-size:0.7rem;
+    opacity:0.8;
+}
+.badge{
+    font-weight:700;
+    height:1.75rem; 
+    background-color: #fff;
+    border:none;
+    border-radius:100px;
+    /* padding:0.25rem 0.9rem; */
+    width:fit-content;
+}
+.dark{
+    background-color: #000;
+    color:#fff;
+}
+
+.sticky-nav{
+    display:flex;
+    justify-content:space-between;
+    position:sticky;
+    top:0;
+    background-color:#000;
+    align-items:center;
+    padding:0.6rem 0 0.7rem 0;
+    z-index:10;
+}
+.sticky-nav-icons img{
+    /* height:1.5rem; 
+    width:1.5rem; */
+    margin:0 0.75rem 0 0.75rem;
+}
+.sticky-nav-icons{
+    margin-left:0.75rem;
+}
+.sticky-nav-options{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.nav-item{
+    margin-right:2rem;
+}
+@media(max-width:1000px){
+    .real{
+        display:none;
+    }
+}
+.cards-container{
+    display:flex;
+    flex-wrap: wrap;
+
+}
+.card{
+    background-color:#140f0f;
+    width:150px;
+    border-radius:0.5rem ;
+    padding:1rem;
+    margin-left:1.5rem;
+    margin-top:1.5rem;
+    /* width:fit-content; */
+}
+.card:hover{
+    background-color: #1f1f1f;
+}
+.card img{
+    width:100%;
+    margin-left:0.2rem;
+    height:150px;
+    border-radius: 0.5rem;
+}
+.card-title{
+    font-weight:600;
+}
+.card-info{
+    opacity:0.7;
+    font-size:0.9rem;
+}
+.footer{
+    height:200px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+.line{
+    height:50%;
+    width:90%;
+    border-top:1px solid white;
+    opacity:0.4;
+}
+.left{
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+    width:25%;
+}
+.forth{
+    font-weight:600;
+}
+.first{
+    margin:0 0rem 0 0.2rem;
+    /* height:3rem; */
+}
+.first img{
+    height:2.5rem;
+    width:2.5rem;
+}
+.sec{
+    /* margin:0 1rem 0 0rem; */
+    font-size:0.7rem;
+    line-height:10px;
+    
+}
+/* .third{
+    display:inline;
+} */
+.third i{
+    margin:0.5rem;
+}
+.player{
+    width:50%;
+}
+.end{
+    width:25%;
+}
+.player-control-icon{
+    height:1rem;
+    margin-top:0.5rem;
+    /* align-items:center;
+    justify-content:space-evenly; */
+}
+.player-controls{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.player{
+    justify-content:center;
+    align-items:center;
+    line-height:2rem;
+}
+.progress-bars{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    /* margin-top:0.5rem; */
+    margin-top:0.5rem ;
+}
+.progress-bar{
+    width:70%;
+    appearance: none;
+    background-color:transparent;
+    cursor:pointer;
+}
+.progress-bar::-webkit-slider-runnable-track{
+    background-color: #bbb;
+    border-radius:100px;
+    height:0.25rem;
+
+}
+.progress-bar::-webkit-slider-thumb{
+    appearance:none;
+    height:16px;
+    width:1rem;
+    background-color:#1bd760 ;
+    border-radius:50%;
+    margin-top:-6px;
+}
+.mid{
+    height:1.9rem;
+    width:1.9rem;
+    
+}
+.mid:hover{
+    height:2.2rem;
+    width:2.2rem;
+}
+.ends{
+    opacity:0.7;
+}
+.midend{
+    opacity:0.8;
+}
+.curr-time{
+    opacity:0.8;
+    font-size:0.9rem;
+}
+.midend:hover{
+    opacity:1;
+}
+.end{
+    display:flex;
+}
+.start i{
+    margin:0.2rem;
+    opacity:0.7;
+}
+.start i:hover{
+    opacity:1;
+}
+.ends{
+    margin-left:1.5rem;
+}
